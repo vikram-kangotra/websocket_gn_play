@@ -1,0 +1,12 @@
+executable("websocket_client") {
+  sources = [
+    "src/main.cpp",
+    "src/websocket_client.cpp"
+  ]
+  libs = [
+    "boost_system",
+    "boost_filesystem",
+    "ssl",
+    "crypto",
+  ]
+}

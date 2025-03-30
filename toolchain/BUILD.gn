@@ -1,0 +1,13 @@
+
+toolchain("default") {
+    tool("cc") {
+        command = "clang -c -o {{output}} {{source}}"
+    }
+    tool("cxx") {
+        command = "clang++ -c -o {{output}} {{source}}"
+    }
+    tool("link") {
+        command = "clang++ -o {{output}} {{source}}"
+    }
+}
+
